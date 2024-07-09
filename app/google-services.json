@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "562339979349",
+    "project_id": "wakeup-e8121",
+    "storage_bucket": "wakeup-e8121.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562339979349:android:0dbe9360f42771f94b34dc",
+        "android_client_info": {
+          "package_name": "com.example.wakeup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxSunp94V-qJaMp9WdNy6U-wua1kiyucs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
