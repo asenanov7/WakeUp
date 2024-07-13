@@ -25,4 +25,8 @@
     <string name="required_score">Необходимое количество правильных ответов: %s</string>
     <string name="progress_answers">Правильных ответов %s (минимум %s)</string>
     <string name="give_perm">Для работы приложения нужно предоставить разрешение, переустановите</string>
+    <string name="play">ИГРАТЬ</string>
+    <string name="input_name">Введите имя</string>
+    <string name="permission_agitation">Для выбора аватара, необходимо предоставить разрешение</string>
+    <string name="go_to_settings">В настройки</string>
 </resources>

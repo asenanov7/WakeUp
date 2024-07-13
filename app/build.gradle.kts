@@ -38,6 +38,7 @@ android {
 
 dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+    implementation("androidx.fragment:fragment-ktx:1.3.2")
     implementation("com.google.firebase:firebase-crashlytics")
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-storage")
