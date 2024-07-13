@@ -33,8 +33,11 @@ class GreetingFragment : Fragment() {
     private val requestPermissionsLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
     ) { permissions ->
-        if (permissions.entries.all { it.value }) { chooseImage() }
-        else { ShouldGivePermissionDialog().show(parentFragmentManager, PERMISSION_AGITATION) }
+        if (permissions.entries.all { it.value }) {
+            chooseImage()
+        } else {
+            ShouldGivePermissionDialog().show(parentFragmentManager, PERMISSION_AGITATION)
+        }
     }
 
     override fun onCreateView(
@@ -49,7 +52,10 @@ class GreetingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.editTextName.addTextChangedListener { viewModel.textNotEmpty.value = it.isNullOrEmpty().not() }
         binding.avatarImageView.setOnClickListener { requestPermissions() }
-        binding.nextButton.setOnClickListener { launchWelcomeFragment() }
+        binding.nextButton.setOnClickListener {
+            launchWelcomeFragment()
+            rememberName(binding.editTextName.text.toString())
+        }
         lifecycleScope.launch {
             viewModel.buttonEnabled.collectLatest {
                 binding.nextButton.isEnabled = it
@@ -59,6 +65,10 @@ class GreetingFragment : Fragment() {
 
     private fun launchWelcomeFragment() {
         parentFragmentManager.beginTransaction().replace(R.id.main_container, WelcomeFragment()).commit()
+    }
+
+    private fun rememberName(name: String) {
+        SharedPreference(requireContext()).putUserName(name)
     }
 
     private fun chooseImage() {

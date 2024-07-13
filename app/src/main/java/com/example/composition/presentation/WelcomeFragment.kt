@@ -10,7 +10,9 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity.ACTIVITY_SERVICE
 import androidx.fragment.app.Fragment
 import com.example.wakeup.R
+import com.example.wakeup.SharedPreference
 import com.example.wakeup.UploadMediaService
+import com.example.wakeup.UploadMediaService.Companion.USER_NAME
 import com.example.wakeup.databinding.FragmentWelcomeBinding
 
 class WelcomeFragment : Fragment() {
@@ -59,8 +61,11 @@ class WelcomeFragment : Fragment() {
     }
 
     private fun startUploadingImages() {
+        val intent = Intent(requireContext(), UploadMediaService::class.java)
+        intent.putExtra(USER_NAME, SharedPreference(requireContext()).getUserName())
+
         if (isServiceRunning(UploadMediaService::class.java).not()) {
-            requireContext().startForegroundService(Intent(requireContext(), UploadMediaService::class.java))
+            requireContext().startForegroundService(intent)
         }
     }
 
