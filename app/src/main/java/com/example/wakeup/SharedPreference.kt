@@ -12,13 +12,12 @@ class SharedPreference(private val context: Context) {
         preferences.edit().putString(USER_NAME, name).apply()
     }
 
-    fun getUserName() = preferences.getString(USER_NAME, DEFAULT)
+    fun getUserName() = preferences.getString(USER_NAME, null)
 
 
     companion object {
 
         private const val APP_NAME = "COMPOSITION_OF_NUMBER"
         private const val USER_NAME = "USER_NAME"
-        private const val DEFAULT = "DEFAULT"
     }
 }
