@@ -30,7 +30,7 @@ class NotificationManager(
 
         const val CHANNEL_ID = "WAKE_UP_CHANNEL_ID"
         const val CHANNEL_NAME = "WAKE_UP_CHANNEL_NAME"
-        const val TITLE = "Настройка конфигурации будильника"
+        const val TITLE = "Формирование новых задач"
 
     }
 
