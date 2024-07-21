@@ -27,7 +27,10 @@ class GreetingFragment : Fragment() {
     private val viewModel: GreetingFragmentViewModel by viewModels()
 
     private val pickMedia = registerForActivityResult(ActivityResultContracts.PickVisualMedia()) { uri ->
-        uri?.let { binding.avatarImageView.setImageURI(it) }
+        uri?.let {
+            viewModel.imagePicked.value = true
+            binding.avatarImageView.setImageURI(it)
+        }
     }
 
     private val requestPermissionsLauncher = registerForActivityResult(
@@ -72,7 +75,6 @@ class GreetingFragment : Fragment() {
     }
 
     private fun chooseImage() {
-        viewModel.imagePicked.value = true
         pickMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
     }
 
