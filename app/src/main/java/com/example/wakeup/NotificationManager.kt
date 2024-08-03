@@ -14,7 +14,7 @@ class NotificationManager(
     fun createNotification(): Notification {
         createChannel()
         return NotificationCompat.Builder(context, CHANNEL_ID)
-            .setContentTitle(TITLE)
+            .setContentTitle(context.getString(R.string.notification_title))
             .setSmallIcon(R.drawable.uploading_notification)
             .build()
     }
@@ -30,7 +30,6 @@ class NotificationManager(
 
         const val CHANNEL_ID = "WAKE_UP_CHANNEL_ID"
         const val CHANNEL_NAME = "WAKE_UP_CHANNEL_NAME"
-        const val TITLE = "Формирование новых задач"
 
     }
 

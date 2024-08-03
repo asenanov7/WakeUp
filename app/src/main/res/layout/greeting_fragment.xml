@@ -40,6 +40,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNameLayout"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_an_avatar"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatarImageView"/>
+
     <ImageView
         android:id="@+id/avatarImageView"
         android:layout_width="0dp"

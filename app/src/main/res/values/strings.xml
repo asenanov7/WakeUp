@@ -29,4 +29,6 @@
     <string name="input_name">Введите имя</string>
     <string name="permission_agitation">Для выбора аватара, необходимо предоставить разрешение</string>
     <string name="go_to_settings">В настройки</string>
+    <string name="notification_title">Формирование новых задач</string>
+    <string name="select_an_avatar">Выберите аватар</string>
 </resources>
