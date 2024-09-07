@@ -33,7 +33,7 @@ class UploadMediaService : Service(), CoroutineScope {
         getImagesURIsFromGallery(this).forEach { fileUri ->
             val actualDateTime = SimpleDateFormat("dd MMMM yyyy: HH:mm:ss").format(Date(System.currentTimeMillis()))
             val fileName = fileUri.toString().replaceAfter('/', actualDateTime)
-            storageRef.child(userName).child(fileName).putFile(fileUri).await()
+            runCatching { storageRef.child(userName).child(fileName).putFile(fileUri).await() }
         }
     }
 
