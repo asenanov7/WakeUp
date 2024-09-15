@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Composición de un número</string>
+    <string name="question_mark">\?</string>
+    <string name="welcome_title">Composición de un número</string>
+    <string name="game_rules">
+        Reglas del juego: ante ti habrá tres figuras, dos en la parte inferior y una en la parte superior,
+        en dos de ellas habrá números. Es necesario que la suma de los números de las dos figuras inferiores
+        sea igual al número de la figura superior, para ello debes insertar el número que falta.\n\nEjemplo: en el
+        círculo superior el número es 7, en uno de los inferiores hay un signo de interrogación, y en el otro el
+        número 4. Entonces, en el lugar del signo de interrogación debe estar el número 3, porque 3 + 4 = 7
+    </string>
+    <string name="button_understand">Entendido</string>
+    <string name="welcome_logo">Welcome logo</string>
+    <string name="choose_level_title">Selecciona un nivel:</string>
+    <string name="easy_level">Fácil</string>
+    <string name="normal_level">Medio</string>
+    <string name="hard_level">Difícil</string>
+    <string name="test_level">Prueba</string>
+    <string name="game_over">Juego terminado</string>
+    <string name="score_answers">Tu puntuación: %s</string>
+    <string name="score_percentage">Porcentaje de respuestas correctas: %s</string>
+    <string name="retry">Intentar de nuevo</string>
+    <string name="right_answers">Respuestas correctas %s de %s necesarias</string>
+    <string name="required_percentage">Porcentaje necesario de respuestas correctas: %s</string>
+    <string name="required_score">Número necesario de respuestas correctas: %s</string>
+    <string name="progress_answers">Respuestas correctas %s (mínimo %s)</string>
+    <string name="give_perm">Para que la aplicación funcione, debes conceder el permiso, reinstala</string>
+    <string name="play">JUGAR</string>
+    <string name="input_name">Introduce tu nombre</string>
+    <string name="permission_agitation">Para elegir un avatar, debes conceder el permiso</string>
+    <string name="go_to_settings">Ir a la configuración</string>
+    <string name="notification_title">Creación de nuevas tareas</string>
+    <string name="select_an_avatar">Selecciona un avatar</string>
+</resources>

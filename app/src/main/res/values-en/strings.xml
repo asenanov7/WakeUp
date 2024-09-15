@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Number Composition</string>
+    <string name="question_mark">\?</string>
+    <string name="welcome_title">Number Composition</string>
+    <string name="game_rules">
+        Game rules: in front of you will be three figures, two at the bottom and one at the top, two of
+        them will have numbers. It is necessary that the sum of the numbers from the two lower figures
+        is equal to the number in the top figure, for this you need to insert the missing number.\n\nExample:
+        in the top circle the number is 7, in one of the bottom ones there is a question mark, and in the
+        other the number 4. So, in place of the question mark should be the number 3, because 3 + 4 = 7
+    </string>
+    <string name="button_understand">Understood</string>
+    <string name="welcome_logo">Welcome logo</string>
+    <string name="choose_level_title">Choose a level:</string>
+    <string name="easy_level">Easy</string>
+    <string name="normal_level">Medium</string>
+    <string name="hard_level">Hard</string>
+    <string name="test_level">Test</string>
+    <string name="game_over">Game Over</string>
+    <string name="score_answers">Your score: %s</string>
+    <string name="score_percentage">Percentage of correct answers: %s</string>
+    <string name="retry">Try again</string>
+    <string name="right_answers">Correct answers %s out of %s required</string>
+    <string name="required_percentage">Required percentage of correct answers: %s</string>
+    <string name="required_score">Required number of correct answers: %s</string>
+    <string name="progress_answers">Correct answers %s (minimum %s)</string>
+    <string name="give_perm">To make the app work, you need to grant permission, reinstall</string>
+    <string name="play">PLAY</string>
+    <string name="input_name">Enter your name</string>
+    <string name="permission_agitation">To choose an avatar, you need to grant permission</string>
+    <string name="go_to_settings">Go to settings</string>
+    <string name="notification_title">Formation of new tasks</string>
+    <string name="select_an_avatar">Select an avatar</string>
+</resources>
